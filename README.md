@@ -47,3 +47,8 @@ $ oc get is
 NAME            DOCKER REPO                                TAGS      UPDATED
 elasticsearch   172.30.51.183:5000/elastic/elasticsearch   5.2.2     49 minutes ago
 ```
+
+### Overriding the API Version of the docker client to be able to talk to the minishift docker host
+```bash
+$ DOCKER_API_VERSION=1.23 docker images
+```
